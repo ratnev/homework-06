@@ -19,8 +19,7 @@ img {
 
 /* navigation */
 .page-nav {
-    margin-top: 28px;
-    margin-bottom: 132px;
+    padding: 28px 0 132px 0;
     position: relative;
 }
 
@@ -28,10 +27,9 @@ img {
     width: 492px;
     list-style: none;
     position: absolute;
-    top: 0;
+    top: 30px;
     right: 0;
     margin: 0;
-    margin-top: 6px;
     padding: 0;
     display: flex;
     justify-content: space-between;
@@ -41,7 +39,8 @@ img {
     position: relative;
 }
 
-.page-nav-item a {
+.page-nav-link {
+    display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     text-decoration: none;
@@ -49,14 +48,14 @@ img {
     color: #1abc9c;
 }
 
-.page-nav-item a:hover,
-.page-nav-item a:focus {
+.page-nav-link:hover,
+.page-nav-link:focus {
     color: #f38181;
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
 
-.page-nav-item a:hover::after {
+.page-nav-link:hover::after {
     content: '';
     display: block;
     width: 100%;
@@ -68,7 +67,7 @@ img {
     transition-timing-function: linear;
 }
 
-.page-nav-item a:focus::after {
+.page-nav-link:focus::after {
     content: '';
     display: block;
     width: 100%;
@@ -252,7 +251,7 @@ img {
 }
 
 .profile-color:hover .tli-profile {
-    transform:translate(-10px, -10px);
+    transform: translate(-10px, -10px);
     transition-duration: 200ms;
     transition-timing-function: linear;
 }
@@ -286,25 +285,49 @@ img {
 }
 
 .socials-items {
-    width: 58px;
-    height: 58px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-right: 1px solid #f9bd87;
-    background-color: #fce38a;
-    cursor: pointer;
 }
 
 .socials-items:last-child {
     border-right: none;
 }
 
-.socials-items:hover {
+.socials-items-link {
+    display: block;
+    width: 58px;
+    height: 58px;
+    background-color: #fce38a;
+}
+
+.socials-items-link:hover {
     background-color: #95e1d3;
     border: none;
     transition-duration: 200ms;
     transition-timing-function: linear;
+}
+
+.flink {
+    background-image: url('../img/socials/facebook.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tlink {
+    background-image: url('../img/socials/twitter.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.plink {
+    background-image: url('../img/socials/pinterest.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ilink {
+    background-image: url('../img/socials/instagram.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .profile-name {
